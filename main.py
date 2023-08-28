@@ -3,7 +3,7 @@ import time
 version = 'v1.0\n'
 output_text = ''
 welcome = 'Welcome to FandomHTML ' + version
-initial_message = '1. Add <br>\n2. Add <br> from a file .txt\nPress X to exit'
+initial_message = '1. Add <br>\n2. Add <br> from a file .txt (WIP)\nPress X to exit'
 
 def convert_newlines_to_br(input_text):
     return input_text.replace('\n', '<br>')
@@ -28,3 +28,5 @@ if init_welcome == '1':
     output_text = convert_newlines_to_br(input_text)
     print(output_text)
     time.sleep(30)
+if init_welcome == 'X':
+    sys.exit()
